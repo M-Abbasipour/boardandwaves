@@ -1,0 +1,79 @@
+/* min-width 655px */
+@media only screen and (min-width: 655px) {
+    .slicknav_menu {
+        display:none;
+    }
+    #menu {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        display: inline;
+        right: 0;
+    }
+    nav > ul {
+        height: 54px;
+        background-color: #cfe6e6;
+    }
+    nav > ul > li {
+        width: 150px;
+        height: 54px;
+        float: right;
+        text-align: center;
+        background-color: #cfe6e6;
+    }
+    nav > ul > li > a {
+        font-size: 140%;
+        line-height: 50px;
+        text-align: center;
+    }
+    nav > ul > li:not(:last-child) > a {
+        width: 150px;
+    }
+        nav > ul > li:hover  {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #888d9c; /*change this element for hover over in first level nav */
+        color: #e8e8e1;
+    }
+nav > ul:not(:hover) > li.active >  {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #888d9c; /*change this element for hover over in first level nav */
+        color: #e8e8e1;
+        
+    }
+    /* second level */
+    nav li ul {
+        background-color: #cfe6e6;
+        display: none;
+        position: absolute;
+        width: 150px;
+        top: 54px;
+    }
+    nav li:hover ul {
+        display: block;
+    }
+    nav li:not(:first-child):hover ul {
+color: #474752;
+    }
+    nav li ul a {
+        font-size: 130%;
+        line-height: 1.7;
+        
+    }
+    nav li ul li:hover, nav li ul:not(:hover) li.active {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #888d9c; /*change this element for hover over in first level nav */
+        color: #e8e8e1;
+    }   
+    .section1, .section2, .section3, .section4 {  
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 80% 10%;
+    }
+}
